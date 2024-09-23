@@ -21,17 +21,29 @@ body {
   border-color: var(--border-color);
   color: white;
   user-select: none;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
-  height: 100%;
+
 
 }
 
 
 @layer utilities {
+  .nav-height {
+    @apply h-[calc(100vh-60px)]
+  }
+
   .flex-box {
     @apply flex justify-between gap-5 
   }
- 
+  .flex-center {
+    @apply flex justify-center items-center gap-5 
+  }
+  .hero-title {
+    @apply text-center font-semibold text-3xl text-gray-100  max-md:mb-10
+  }
+  .btn {
+    @apply px-5 py-2 rounded-3xl bg-blue-400  hover:bg-transparent border border-transparent hover:border hover:text-blue-100 hover:border-blue-300
+  }
 
 }
