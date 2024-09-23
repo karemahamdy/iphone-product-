@@ -29,7 +29,9 @@ body {
 
 
 @layer utilities {
- 
+  .flex-box {
+    @apply flex justify-between gap-5 
+  }
  
 
 }
