@@ -2,6 +2,7 @@ import  watchImg from "/assets/images/watch.svg"
 import  rightImg from "/assets/images/right.svg"
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import VedioCarousel from "./VedioCarousel"
 
 function Hailights() {
 
@@ -11,8 +12,8 @@ function Hailights() {
   }, [])
 
   return (
-    <section className="mx-24 my-8 mt-5 bg-zinc-950">
-      <div className=" flex-box m-7">
+    <section className=" bg-zinc-950">
+      <div className="mx-24 my-8 mt-5 flex-box m-7">
         <h1 className="section-heading" id="title">Get the highlights.</h1>
 
         <div className="flex flex-wrap items-end  gap-5" >
@@ -27,6 +28,7 @@ function Hailights() {
         </div>
 
       </div>
+        <VedioCarousel/>
     </section>
   )
 

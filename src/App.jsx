@@ -1,7 +1,8 @@
+import './App.css'
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
-import './App.css'
 import Hailights from "./components/Hailights"
+
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       <Nav/>
       <Hero/>  
       <Hailights/>
-      
+    
     </div>
   )
 }
