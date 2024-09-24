@@ -8,7 +8,7 @@ const navLists = ["store", "iphone", "mac", "support"]
   return (
     <>
     <nav>
-      <div className="flex-box flex-row">
+      <div className="flex-box flex-row container">
         <img src={appleImg} alt="Apple Logo"  width={14} height={18} />
 
         <ul className="list-none flex-box cursor-pointer text-gray-400 max-sm:hidden">
