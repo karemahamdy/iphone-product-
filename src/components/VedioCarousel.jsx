@@ -2,6 +2,9 @@ import highlightFirstVideo from "/assets/videos/highlight-first.mp4";
 import highlightSecondVideo from "/assets/videos/hightlight-third.mp4";
 import highlightThirdVideo from "/assets/videos/hightlight-sec.mp4";
 import highlightFourthVideo from "/assets/videos/hightlight-fourth.mp4";
+import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
  const hightlightsSlides = [
   {
@@ -39,6 +42,43 @@ import highlightFourthVideo from "/assets/videos/hightlight-fourth.mp4";
 ];
 
 function VedioCarousel() {
+
+
+  const [video, setVideo] = useState({
+    isEnd: false,
+    startPlay: false,
+    videoId: 0,
+    isLastVideo: false,
+    isPlaying: false,
+  });
+
+  const [loadedData, setLoadedData] = useState([]);
+  const { isEnd, isLastVideo, startPlay, videoId, isPlaying } = video;
+
+  useGSAP(() => {
+  
+    gsap.to("#slider", {
+      transform: `translateX(${-100 * videoId}%)`,
+      duration: 2,
+      ease: "power2.inOut", 
+    });
+
+    
+    gsap.to("#video", {
+      scrollTrigger: {
+        trigger: "#video",
+        toggleActions: "restart none none none",
+      },
+      onComplete: () => {
+        setVideo((pre) => ({
+          ...pre,
+          startPlay: true,
+          isPlaying: true,
+        }));
+      },
+    });
+  }, [isEnd, videoId]);
+
   return (
     <>
      <div className="flex items-center mt-24">
