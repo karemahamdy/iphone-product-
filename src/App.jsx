@@ -12,7 +12,7 @@ function App() {
       <Nav/>
       <Hero/>  
       <Hailights/>
-    
+      <p>test</p>
     </div>
   )
 }
