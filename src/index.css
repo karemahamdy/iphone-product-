@@ -41,6 +41,9 @@ body {
   .flex-center {
     @apply flex justify-center items-center gap-5 
   }
+  .feature-text-container {
+    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5
+  }
   .btn {
     @apply px-5 py-2 rounded-3xl bg-blue-400  hover:bg-transparent border border-transparent hover:border hover:text-blue-100 hover:border-blue-300
   }
@@ -53,6 +56,10 @@ body {
   .section-heading {
     @apply text-gray-500 lg:text-6xl md:text-5xl text-3xl  font-medium opacity-0 translate-y-[100px]
   }
+  .feature-text {
+    @apply text-gray-500 max-w-md text-lg md:text-xl font-semibold  translate-y-[100px] opacity-0
+  }
+
   .video-carousel_container {
     @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]
   }
