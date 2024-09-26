@@ -3,6 +3,7 @@ import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Hailights from "./components/Hailights"
 import Features from './components/Feature'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Hero/>  
       <Hailights/>
       <Features/>
+      <Footer/>
     </div>
   )
 }
