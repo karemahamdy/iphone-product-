@@ -17,7 +17,7 @@ const navLists = ["store", "iphone", "mac", "support"]
         ))}
         </ul>
 
-        <div className="flex-box">
+        <div className="flex-box mr-24">
         <img src={search} alt="Apple Logo"  width={14} height={18} />
         <img src={bag} alt="Apple Logo"  width={14} height={18} />
         </div>

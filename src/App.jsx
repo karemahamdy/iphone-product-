@@ -2,6 +2,7 @@ import './App.css'
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Hailights from "./components/Hailights"
+import HowItWorks from './components/Howitworks'
 import Features from './components/Feature'
 import Footer from './components/Footer'
 
@@ -15,6 +16,7 @@ function App() {
       <Hero/>  
       <Hailights/>
       <Features/>
+      <HowItWorks/>
       <Footer/>
     </div>
   )
