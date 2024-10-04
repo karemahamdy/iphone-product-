@@ -16,7 +16,7 @@ function App() {
       <Nav/>
       <Hero/>  
       <Hailights/>
-      <Model />
+    
       <Features/>
       <HowItWorks/>
       <Footer/>
