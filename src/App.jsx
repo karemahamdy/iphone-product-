@@ -2,7 +2,7 @@ import './App.css'
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Hailights from "./components/Hailights"
-import Model from './components/Model'
+// import Model from './components/Model'
 import HowItWorks from './components/Howitworks'
 import Features from './components/Feature'
 import Footer from './components/Footer'
